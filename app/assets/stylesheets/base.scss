@@ -1,0 +1,47 @@
+.navbar-default .navbar-nav > li > a {
+	color: #fff;
+}
+
+.navi {
+	background-color: #3a638b;
+	.navbar-brand {
+		color: #fff;
+	}	
+}
+
+.control-label {
+	margin-top: 15px;
+}
+
+.btn-submit {
+	margin-top: 20px;
+	padding: 10px 25px;
+}
+
+.btn-primary {
+	background-color: rgba(58, 99, 139, 0.6);
+	border-color: rgba(58, 99, 139, 0.8);
+}
+
+.btn-success:visited {
+	color: #fff;
+}
+
+.btn-link:visited {
+	color: #428bca;
+}
+
+.btn-back {
+	padding: 0;
+}
+
+.alert-bar {
+	
+	.col-xs-12 {
+		padding: 0;
+	}
+	
+	.alert {
+		border-radius: 0;
+	}
+}

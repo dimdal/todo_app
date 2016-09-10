@@ -1,0 +1,31 @@
+<%= form_for(@todo) do |f| %>
+  <% if @todo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@todo.errors.count, "error") %> prohibited this todo from being saved:</h2>
+
+      <ul>
+      <% @todo.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.label :title, class: 'control-label col-xs-10 col-xs-offset-1' %>
+    <div class="col-xs-10 col-xs-offset-1">
+      <%= f.text_field :title, class: 'form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :notes, class: 'control-label col-xs-10 col-xs-offset-1' %>
+    <div class="col-xs-10 col-xs-offset-1">
+      <%= f.text_area :notes, class: 'form-control' %>
+    </div>
+  </div>
+  <div class="actions form-group">
+    <div class="col-xs-2 col-xs-offset-9">
+      <%= f.submit 'Add todo', :class => 'btn btn-lg btn-success btn-submit' %>
+    </div>
+  </div>
+<% end %>

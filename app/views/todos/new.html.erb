@@ -1,0 +1,15 @@
+<div class="row">
+	<div class="col-xs-10 col-xs-offset-1">
+		<%= link_to 'Back', todos_path, class: "btn btn-link btn-back" %>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-xs-10 col-xs-offset-1">
+		<h1>New Todo</h1>
+	</div>
+</div>
+
+<%= render 'form', todo: @todo %>
+
+
